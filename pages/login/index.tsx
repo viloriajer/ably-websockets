@@ -5,6 +5,8 @@ const LoginPage = () => {
     <div className='flex flex-col h-screen items-center justify-center'>
         <div className='flex flex-col'>
         <button onClick={() => signIn("github", {callbackUrl:'/join-session'})}>Sign in with Github</button>
+        <button onClick={() => signIn("credentials", {callbackUrl:'/join-session'})}>Sign in with credentials</button>
+        
         </div>
     </div>
   )
